@@ -5,6 +5,8 @@
     --text-color: #F6F6F6;
     --secondary-color: #22D4FD;
     --hover-background-color: #272727;
+    --title-font: 'Krona One', sans-serif;
+    --text-font: 'Montserrat', sans-serif;
 }
 
 * {
@@ -29,8 +31,8 @@ body {
 
 .header__menu__link {
     color: var(--secondary-color);
-    font-size: 24px;
-    font-family: 'Montserrat', 'sans-serif';
+    font-size: 1.5rem;
+    font-family: var(--text-font);
     font-weight: 600;
     text-decoration: none;
 }
@@ -44,23 +46,24 @@ body {
     align-items: center;
     justify-content: space-between;
     padding: 8% 15%;
+    gap: 82px;
 }
 
 .content__texts {
-    width: 615px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px;
 }
 
 .content__texts__title {
-    font-size: 36px;
-    font-family: 'Krona One', sans-serif;
+    font-size: 2.25rem;
+    font-family: var(--title-font);
 }
 
 .content__texts__paragraph {
-    font-size: 24px;
-    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-family: var(--text-font);
 }
 
 .content__links {
@@ -72,30 +75,34 @@ body {
 }
 
 .content__links__subtitle {
-    font-family: 'Krona One', sans-serif;
+    font-family: var(--title-font);
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .content__links__buttons {
     display: flex;
     justify-content: center;
     gap: 16px;
-    align-items: center;
     border: 2px solid var(--secondary-color);
     border-radius: 8px;
-    width: 378px;
-    font-size: 24px;
-    font-family: 'Montserrat', 'sans-serif';
+    width: 50%;
+    font-size: 1.5rem;
+    font-family: var(--text-font);
     font-weight: 600;
     color: var(--text-color);
     padding: 21.5px 0px;
     text-decoration: none;
     text-align: center;
+    align-items: center;
 }
 
 .content__links__buttons:hover {
     background-color: var(--hover-background-color);
+}
+
+.content__image {
+    width: 50%;
 }
 
 .footer {
@@ -103,7 +110,40 @@ body {
     background-color: var(--secondary-color);
     text-align: center;
     padding: 24px;
-    font-family: 'Montserrat', 'sans-serif';
-    font-size: 24px;
+    font-family: var(--text-font);
+    font-size: 1.5rem;
     font-weight: 400;
+}
+
+@media(max-width: 1500px) {
+    .header {
+        padding: 10%;
+    }
+
+    .header__menu {
+        justify-content: center;
+    }
+    
+    .content {
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+
+    .content__texts {
+        width: auto;
+    }
+
+    .content__texts__title {
+        font-size: 2rem;
+    }
+
+    .content__links__buttons {
+        width: 60%;
+    }
+
+    .content__image {
+        width: 60%;
+    }
+
+    
 }
