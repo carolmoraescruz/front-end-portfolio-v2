@@ -4,6 +4,7 @@
     --background-color: #000000;
     --text-color: #F6F6F6;
     --secondary-color: #22D4FD;
+    --hover-background-color: #272727;
 }
 
 * {
@@ -62,6 +63,10 @@ body {
 
 .content__links__buttons {
     /* background-color: var(--secondary-color); */
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    align-items: center;
     border: 2px solid var(--secondary-color);
     border-radius: 8px;
     width: 378px;
@@ -72,4 +77,8 @@ body {
     padding: 21.5px 0px;
     text-decoration: none;
     text-align: center;
+}
+
+.content__links__buttons:hover {
+    background-color: var(--hover-background-color);
 }
