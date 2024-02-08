@@ -15,7 +15,6 @@
 body {
     background-color: var(--background-color);
     color: var(--text-color);
-    height: 100vh;
     box-sizing: border-box;
 }
 
@@ -27,7 +26,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 10% 15%;
+    padding: 8% 15%;
 }
 
 .content__texts {
@@ -62,7 +61,6 @@ body {
 }
 
 .content__links__buttons {
-    /* background-color: var(--secondary-color); */
     display: flex;
     justify-content: center;
     gap: 16px;
@@ -81,4 +79,14 @@ body {
 
 .content__links__buttons:hover {
     background-color: var(--hover-background-color);
+}
+
+.footer {
+    color: var(--background-color);
+    background-color: var(--secondary-color);
+    text-align: center;
+    padding: 24px;
+    font-family: 'Montserrat', 'sans-serif';
+    font-size: 24px;
+    font-weight: 400;
 }
